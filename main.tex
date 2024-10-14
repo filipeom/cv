@@ -1,0 +1,154 @@
+%% start of file `new.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Filipe}
+\familyname{Marques}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Leiria, Portugal}    % optional, remove the line if not wanted
+\mobile{(+351)~914~422~705}                     % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{filipe@filipeom.dev}
+\social[linkedin]{filipeom}
+\homepage{www.filipeom.dev}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[95pt][0.01pt]{photo.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%
+\usepackage{datetime}
+\newcommand{\yearabove}[2]{\parbox[t]{10mm}{\centering{#2\par\vspace{-2mm} \tiny{#1}}}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+\cventry{\yearabove{October}{2022}-- Present}{First Stage Researcher}{}{INESC-ID}{Portugal}{}{}
+\cventry{\yearabove{June}{2024}-- \yearabove{September}{2024}}{Software Engineer Intern}{}{OCamlPro}{Paris, France}{}{}
+
+\cvitem{\textit{Unit}}{ARSR: Automated Reasoning and Software Reliability}
+\cvitem{\textit{Supervisors}}{Jos\'e Fragoso Santos and Nuno Santos}
+
+\cventry{\yearabove{December}{2021}--\yearabove{September}{2022}}{Early Stage Researcher}{}{INESC-ID}{Portugal}{}{}
+\cvitem{\textit{Project}}{INFOCOS: Intelligent Feedback for Content Students}
+\cvitem{\textit{Supervisor}}{Jos\'e Fragoso Santos}
+%\cventry{Start--End}{Position}{}{institution, Research Group, under supervision of %Supervisor-Name}{more text}{text}
+%\cvlistitem {\textbf{Project Description}
+%}
+%\cventry{Start--End}{Position}{}{institution, Research Group, under supervision of %Supervisor-Name}{more text}{text}
+%\cvlistitem {\textbf{Project Description}
+%}
+
+\section{Education}
+\cventry{\yearabove{October}{2022}-- Present}{Ph.D.\ in Computer Science and Engineering}{Instituto Superior T\'ecnico}{Portugal}{}{}
+\cvitem{\textit{Supervisors}}{Profs.\ Jos\'e Fragoso Santos (IST), Limin Jia (CMU), and Nuno Santos (IST)}
+%
+\cventry{\yearabove{September}{2019}--\yearabove{December}{2021}}{M.Sc.\ in Computer Science and Engineering}{Instituto Superior Técnico}{Portugal}{GPA: 17/20}{}{}
+\cvitem{\textit{Thesis}}{Robust Symbolic Execution for WebAssembly}
+\cvitem{\textit{Supervisor}}{Prof.\ Jos\'e Fragoso Santos and Prof.\ Nuno Santos}
+\cvitem{\textit{Jury}}{Jos\'e Borbinha (DEI), Jos\'e Fragoso (DEI), Mikol\'a\u{s} Janota (CIIRC)}
+%
+\cventry{\yearabove{September}{2016}--\yearabove{July}{2019}}{B.Sc.\ in Computer Science and Engineering}{Instituto Superior Técnico}{Portugal}{GPA: 16/20}{}{}
+
+\section{Honors \& Awards}
+\cventry{2022}{CMU Portugal Affiliated Ph.D.\ Program Scholarship}{}{}{}{}
+\cventry{2018--2020}{Academic Merit Diploma}{Instituto Superior T\'ecnico, Universidade de Lisboa}{}{}{}
+
+%\cvlistitem{\textbf{Academic Merit Diploma}\\
+%            Elected Student of Merit at Instituto Superior Técnico (2017/2018 and 2018/2019)}
+
+\section{Publications}
+\cventry{Programming'24}{Owi: Performant Parallel Symbolic Execution Made
+Easy, an Application to WebAssembly}{}{}{}{L.\ Andr\`{e}s, F.\ Marques$^\ast$, P.\ Chambart, A.\ Carcano, and J.\ F.\ Santos. \\
+(In review)
+}
+
+\cventry{KLEE'22}{Poster: Empirical Study on Applying Program Analysis and Testing Tools to Student Code}{}{}{}{F.\ Ramos, F.\ Marques$^\ast$, P.\ Ad\~ao, N.\ Santos, and J.\ F.\ Santos. \\
+In KLEE Workshop 2022
+}
+%
+\cventry{RV'22}{TestSelector: Automatic Test Suite Selection for Student Projects}{}{}{}{F.\ Marques$^\ast$, A.\ Morgado, J.\ F.\ Santos, and M.\ Janota \\
+In Proc.\ of Intl.\ Conf.\ on Runtime Verification. 2022.
+}
+%
+\cventry{ECOOP'22}{Concolic Execution for WebAssembly}{}{}{}{F.\ Marques$^\ast$, J.\ F.\ Santos, N.\ Santos, and P.\ Ad\~ao.\\
+In Proc.\ of European Conference on Object-Oriented Programming. 2022.}
+
+\if0
+\section{Research Talks}
+\cventry{}{Symbolic Analysis for Detecting Injection Vulnerabilities in Node.js Applications}{}{}{}{}
+\cvitem{Jun 2023}{Invited talk to Amazon Prime Video Automated Reasoning Team, London}
+\cvitem{May 2023}{Invited talk to Prof. Limin Jia’s Group @ CyLab, CMU}
+
+\cventry{}{Concolic Execution for WebAssembly}{}{}{}{}
+\cvitem{Dec 2022}{OutSystems AI Reading Group, Lisbon.}
+\cvitem{Sep 2022}{Software Verification Group, Imperial College London. \newline Hosted by Prof. Philippa Gardner}
+\cvitem{Jun 2022}{ECOOP'22}
+
+
+\cventry{}{Empirical Study of C Analysis Tools on Student Code}{}{}{}{}
+\cvitem{Sep 2022}{Invited talk to Meta’s Infer Team Led by Dr. Jules Villard, London}
+\fi
+
+\section{Software}
+\cventry{\textbf{Owi}}{OCaml Wasm Interpreter}{}{Owi is a toolkit to wor with WebAssembly within the OCaml ecosystem. During this year, I've worked to extend Owi's symbolic analysis with the ability to reason about programs that handle dynamically allocated structures, such as lists or trees.}{}{}
+\cvitem{\textit{Role}}{Contributor}
+\cvitem{\textit{Url}}{\url{https://github.com/OCamlPro/owi}}
+
+\cvitem{\textbf{Smt.ml}}{\textbf{Smt.ml} is a multi backend frontend for SMT solvers in OCaml.}
+\cvitem{\textit{Role}}{Creator and Maintainer}
+\cvitem{\textit{Url}}{\url{https://github.com/formalsec/smtml}}
+
+%\cvlistitem{Author1 and Author2, "Concolic Execution for WebAssembly," \textit{ECOOP}, City, country, 2021, pp. 1-last page.}
+
+%\section{Personal Skills}
+%\cvlistitem{Working 5+ years part-time in the service industry has taught me communication and listening skills, conflict resolution, and most importantly, a positive~attitude.}
+
+\section{Other Skills}
+\cvitem{\small\textbf{Programming}}{OCaml, Rust, Python, C/C++, Java, JavaScript, WebAssembly, Haskell}
+\cvitem{\small\textbf{Scripting}}{Bash, Python, Perl (basic)}
+\cvitem{\small\textbf{Linux}}{CLI (intermediate), Revision Control Tools, Configuration Management Tools }
+\cvitem{\footnotesize\textbf{Program Analysis}}{Formal Verification, Symbolic Execution, Type Checking, Testing}
+\cvitem{\small\textbf{Cyber Security}}{Computer and network security. (intermediate)}
+\cvitem{\small\textbf{Languages}}{Portuguese (Native), English (Fluent)}
+
+%\section{Interests}
+%\cvlistitem{}
+
+\end{document}
